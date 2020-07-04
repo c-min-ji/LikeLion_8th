@@ -31,8 +31,8 @@ p {
 
 .mainDetails {
 	padding: 25px 35px;
-	border-bottom: 2px solid #cf8a05;
-	background: #E8D9FF;
+	border-bottom: 2px solid #D1B2FF;
+	background: #D1B2FF;
 }
 
 #name h1 {
@@ -95,7 +95,7 @@ p {
 }
 
 #contactDetails ul li a:hover { 
-	color: #FFB2D9;
+	color: #AD8EDB;
 }
 
 
@@ -126,7 +126,7 @@ section:last-child {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 	font-style: italic;
 	font-size: 1.5em;
-	color: #FFB2D9;
+	color: #AD8EDB;
 }
 
 .sectionContent h2 {
