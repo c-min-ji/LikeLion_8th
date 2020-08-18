@@ -16,11 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 import blog.views
-#from . import urls
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', blog.views.home, name='home'),
-    path('<int:post_id>/', blog.views.detail, name="detail"),
-    path('blog/create/', blog.views.create, name="create"),
-    path('<int:post_id>/delete', blog.views.detail, name="delete"),
+    path('', blog.views.home, name="home"),
+    path('<int:post_id>/', blog.views.detail, name="detail"), #디테일 링크
+    path('new/', blog.views.new, name="new"), #새로 만들기로 들어가는 페이지 링크
+    path('create/', blog.views.create, name="create"), #글 작성
+    path('<int:post_id>/delete', blog.views.delete, name="delete"), #삭제
+    #blog.views.detail 아니고 blog.views.delete
 ]

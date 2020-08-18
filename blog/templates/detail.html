@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>detail</title>
 </head>
 <body>
     <div class="container">
@@ -12,7 +12,8 @@
         <p>{{ post.body }}</p>
     </div>
     <div class="delete">
-        <p><a href="{% url 'delete' post_id %}">삭제하기</a></p>
+        <!--post_id 아니고 post.id-->
+        <p><a href="{% url 'delete' post.id %}">삭제하기</a></p>
     </div>
     <a href="{% url 'home' %}">돌아가기</a>
 </body>
