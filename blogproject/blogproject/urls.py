@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 import blog.views
+import portfolio.views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,5 +27,6 @@ urlpatterns = [
     path('new/', blog.views.new, name="new"), #새로 만들기로 들어가는 페이지 링크
     path('create/', blog.views.create, name="create"), #글 작성
     path('<int:post_id>/delete', blog.views.delete, name="delete"), #삭제
+    path('portfolio/', portfolio.views.portfolio, name="portfolio"),
     #blog.views.detail 아니고 blog.views.delete
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) # media
