@@ -45,3 +45,23 @@ base.html에 상속>타이틀 설정 > css도 설정 > block content
 <br>
 
 > {% extends 'base.html %} -> {% block title %}제목{% endblock %} -> {% block link %}{% static 'page/home.html(연결 파일) %}{% endblock %} -> {% block content %} {% endblock %}
+
+### 25.08.20
+<br>
+GET / POST
+get -> data를 'url'에 포함 시켜 전송, 길이 제약 ㅇ, 캐싱 가능(read에서 활용)
+post -> 무조건 보안이 좋은 건 아닌데 겟보다는 좋다.길이 제약 x, 캐싱 불가(create, update에서 활용)
+참고: HTTP Method/RESTful
+
+#### create/update/delete/
+create 새로운 객체를 생성해서 data를 저장
+update 정보 수정이 필요한 객체를 찾아 data저장
+둘 다 포스트 사용
+delete 제거가 필요한 객체를 찾아 삭제
+redirect - render의 차이점
+render는 항상 요청과 함께 무슨 값을 반환하는 반면, redirect는 주소만 이동을 시켜줌
+### 26.08.20
+get/post
+클라이언트에서 서버로 요청을 보내는 방법
+리드는 겟
+크리에이트나 업데이트는 포스트 권장
