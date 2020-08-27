@@ -65,3 +65,7 @@ get/post
 클라이언트에서 서버로 요청을 보내는 방법
 리드는 겟
 크리에이트나 업데이트는 포스트 권장
+- 패키지 종속성 관리 : 내 패키지를 어떤 버전으로 사용하고 있는 지 알려주는 것
+
+패키지 설치 : pip install -r requirements.txt
+패키지 정의 : pip freeze > requirements.txt
