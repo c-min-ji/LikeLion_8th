@@ -43,7 +43,7 @@ fieldset {
 }
 
 .links {
-    /* 링크들을 상단 우측에 위치시킵니다. */
+    /* 링크들을 상단 우측에 위 */
     position: absolute;
     top: 0;
     right: 0;
@@ -146,7 +146,6 @@ main {
     grid-template-columns: repeat(3, 1fr);
     /* 균일한 크기로 3등분 */
     grid-template-rows: repeat(24, 40px);
-    /* 40px로 24등분 -> <main> 영역의 전체 height가 계산된다면 height 지정 후 1fr로 사용하셔도 좋습니다.*/
     gap: 10px;
 }
 
