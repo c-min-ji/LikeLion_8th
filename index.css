@@ -208,6 +208,7 @@ td {
 .box-four-1 {
     grid-column: 3 / 4;
     grid-row: 4 / 5;
+    border: 1px solid #dee3eb;
 }
 
 .box-four-2 {
