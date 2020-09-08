@@ -224,6 +224,7 @@ td {
 .box-six {
     grid-column: 3 / 4;
     grid-row: 9 / 22;
+    border: 1px solid #dee3eb;
 }
 
 .box-seven {
