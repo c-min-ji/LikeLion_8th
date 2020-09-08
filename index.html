@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVER</title>
+    <!--css연결-->
+    <link rel="stylesheet" href="./index.css">
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/12b3c15bbc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="links">
+            <a href="/" class="link_text" style="color: black;">네이버를 시작페이지로 <i class="fas fa-chevron-circle-right"
+                    style="color: gray;"></i> | </a>
+            <a href="/" class="link_text" style="font-family: 레시피코리아;"> 쥬니어네이버</a>
+            <a href="/" class="link_text">해피빈</a>
+        </div>
+        <a href="/"><img src="https://s.pstatic.net/static/www/mobile/edit/2020/0904/mobile_23523391610.png"
+                class="img_logo" /></a>
+        <form>
+            <fieldset>
+                <legend class="visually-hidden">검색</legend>
+                <div class="search_box">
+                    <input type="text" maxlength="225" tabindex="1" />
+                    <button type="submit" tabindex="2">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+        <nav>
+            <div class="nav_items">
+                <ul>
+                    <li><a href="/"><i class="fas fa-envelope-open-text fa-lg"></i> 메일</a></li>
+                    <li><a href="/">카페</a></li>
+                    <li><a href="/">블로그</a></li>
+                    <li><a href="/">지식iN</a></li>
+                    <li><a href="/">쇼핑</a></li>
+                    <li><a href="/">Pay</a></li>
+                    <li><a href="/"><i class="fas fa-play"></i> TV</a></li>
+                    <li><a href="/">사전</a></li>
+                    <li><a href="/">뉴스</a></li>
+                    <li><a href="/">증권</a></li>
+                    <li><a href="/">부동산</a></li>
+                    <li><a href="/">지도</a></li>
+                    <li><a href="/">영화</a></li>
+                    <li><a href="/">뮤직</a></li>
+                    <li><a href="/">책</a></li>
+                    <li><a href="/">웹툰</a></li>
+                    <li style="color: gray;"><b onclick="fnMore1()" style="cursor: pointer;">더보기 <i
+                                class="fas fa-chevron-circle-down fa-xs"></i></b>
+                    </li>
+                </ul>
+                <div class="keyword">
+                    <span class="color_naver">1</span>
+                    <span style="cursor: pointer;">김인성</span></span>
+                </div>
+                <div class="keyword_weiter">
+                    <i class="fas fa-caret-down" style="cursor: pointer;"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <div class="temp-box box-one">
+                <img src="./banner.jpg" style="height: 100%; width: 100%; cursor: pointer;" />
+            </div>
+            <div class="temp-box box-two">
+                <div style="font-size: 12px; text-align: left; margin-left: 17px; padding-top: 15px;">네이버를 더 안전하고 편리하게
+                    이용하세요</div>
+                <button class="login_button" type="button" style="cursor: pointer;"><strong>NAVER</strong> 로그인</button>
+                <div style="font-size: 12px; text-align: left; margin-left: 17px; "><i class="fas fa-unlock fa-xs"
+                        style="color: rgb(185, 185, 185); padding-right: 5px;"></i><a href="#">아이디</a> · <a
+                        href="#">비밀번호 찾기</a>
+                    <i class="fas fa-user-alt fa-xs"
+                        style="color: rgb(185, 185, 185);  margin-left: 110px; padding-top: 15px ;"></i><a href="#"
+                        style="font-size: 12px; text-align: right; margin-left: 5px;">회원가입</a>
+                </div>
+            </div>
+            <div class="temp-box box-three-1">
+                <div>
+                    <div style="font-size: 12px; font-weight: bold; text-align: left; padding-left: 20px; padding-top: 9px;">
+                        연합뉴스 <i class="fas fa-chevron-right fa-xs" style="color: rgb(104, 104, 104);"> 이스타 항공 605명에게 정리해고 통보...항공업계 구조...</i>
+                        <a href="#" style="padding-left:190px; color: rgb(81, 81, 255);">네이버 뉴스 </a> · 
+                        <a href="#" style="color: black;">연예</a>
+                        <a href="#" style="color: black;">스포츠</a>
+                        <a href="#" style="color: black;">경제</a>
+                    </div>
+                </div>
+            </div>
+            <div class="temp-box box-three-2">
+                <table>
+                    <th colspan="1" style="padding-bottom: 10px; font-size: 12px; text-align: left; padding-top: 9px;"><i class="fas fa-newspaper fa-lg" style="padding-left: 5px;"></i> 뉴스스탠드 <i class="fas fa-chevron-right fa-xs" style="color: rgb(104, 104, 104);"></th>
+                    <th colspan="2" style="padding-bottom: 1px; font-size: 12px; text-align: left; color: rgb(165, 165, 165);">구독한 언론사 · <strong style="color: black;">전체언론사</strong></th>
+                    <th colspan="3"><div style="font-size: 1rem; text-align: right; padding-bottom: 5px;"><i class="fas fa-list fa-xs" style="margin-right: 15px; color: rgb(165, 165, 165);"></i><i class="fas fa-th-large fa-xs" style="margin-right: 15px; color: rgb(142, 142, 255);"></i><i class="fas fa-cog fa-xs" style="margin-right: 15px; color: rgb(165, 165, 165);"></i></div></th>
+                    <tr style="height: 70px">
+                        <td><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/939.png" style=" height: 20px;"></td>
+                        <td><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/447.png" style="height: 20px;"></td>
+                        <td><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/356.png" style="height: 20px;"></td>
+                        <td><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/977.png" style="height: 20px;"></td>
+                        <td><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/050.png" style="height: 20px;"></td>
+                        <td><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/330.png" style="height: 20px;"></td>
+                    </tr>
+                    <tr style="height: 70px">
+                        <td><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/092.png" style="height: 20px;"></td>
+                        <td><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/057.png" style=" height: 20px;"></td>
+                        <td><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/277.png" style="height: 20px;"></td>
+                        <td><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/327.png" style="height: 20px;"></td>
+                        <td><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/293.png" style="height: 20px;"></td>
+                        <td><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/241.png" style="height: 20px;"></td>
+                    </tr>
+                    <tr style="height: 70px">
+                        <td><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/081.png" style="height: 20px;"></td>
+                        <td><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/002.png" style=" height: 20px;"></td>
+                        <td><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/006.png" style="height: 20px;"></td>
+                        <td><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/214.png" style="height: 20px;"></td>
+                        <td><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/047.png" style="height: 20px;"></td>
+                        <td><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/139.png" style="height: 20px;"></td>
+                    </tr>
+                    <tr style="height: 70px">
+                        <td><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/368.png" style=" height: 20px;"></td>
+                        <td><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/387.png" style="height: 20px;"></td>
+                        <td><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/926.png" style="height: 20px;"></td>
+                        <td><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/329.png" style="height: 20px;"></td>
+                        <td><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/910.png" style="height: 20px;"></td>
+                        <td><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/988.png" style="height: 20px;"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="temp-box box-four-1">
+                <div style="font-size: 10px; font-weight: bold; text-align: left; padding-left: 20px; padding-top: 8px; color:rgb(104, 104, 104);">
+                    미세 <i class="fas fa-laugh fa-lg" style="color: rgb(140, 140, 255);"><strong style="color: black; font-size: 12px;"> 좋음</strong></i> │
+                    초미세 <strong style="color: black; font-size: 12px;"> 정보 없음</strong>
+                    <button type="button" style="cursor: pointer; margin-left: 100px; border: 1px solid lightgray; background-color: white;"><</button>
+                    <button type="button" style="cursor: pointer; margin-left: -2px; border: 1px solid lightgray; background-color: white;">></button>
+                </div>
+            </div>
+            <div class="temp-box box-four-2">
+                <img src="./ad.jpg" style="width: 100%; height: 100%; cursor: pointer;">
+            </div>
+            <div class="temp-box box-five">
+                <table>
+                    <th colspan="1" style="padding-left: 5px; padding-bottom: 10px; font-size: 12px; text-align: right; padding-top: 9px;">오늘읽을만한글</th>
+                    <th colspan="4" style="color: rgb(165, 165, 165); font-size: x-small; text-align: left;"> 주제별로 분류된 다양한 글 모음</th>
+                    <th colspan="3" style=" text-align: right; font-size:x-small; font-weight: lighter;"><strong>2,173</strong> 개의 글 │ <i class="fas fa-cog fa-xs" style="margin-right: 15px; color: rgb(165, 165, 165);"> 관심주제설정</i></th>
+                    <tr style="font-size: 12px; height: 40px; font-weight: bold;">
+                        <td>JOB&</td>
+                        <td>테크</td>
+                        <td>여행+</td>
+                        <td>과학</td>
+                        <td>리빙</td>
+                        <td  style="background-color: rgb(50, 199, 99); color: white;">건강</td>
+                        <td>비지니스</td>
+                        <td>연애·결혼</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td style="width: 30%; border: none; padding-top: 10px; cursor: pointer;"><img src="https://s.pstatic.net/static/www/mobile/edit/2020/0904/cropImg_728x360_41135033088168049.jpeg" style="width: 90%; height: 120px; margin: 5px;"></td>
+                        <td style="width: 70%; border: none; text-align: left; margin-left: 5px; cursor: pointer; padding-top: 10px;"><div style="padding-left: 10px; color: yellowgreen; font-size: x-small; font-weight: bold;">식품 · 영양</div><div style="margin-left: 10px; font-size: 12px; font-weight: bold;">마켓 컬리의 젊은 농부<p style="font-weight: normal;">이번 주 집에서 재택하는 남편을 위해나름대로 간식을 만들 준비를 해봤어요. ​요즘 장보러 가기도 무섭잖아요..그래서 온라인장보기를 했어요 ^^기본 야채들은 이미 냉장고에 있고.간식거리가 없어서 간식을 위한 장바구니에요^^​쓱배송과 컬</p><p style="font-size: x-small; color:rgb(165, 165, 165);">새농이 · 4일전</p></div></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 30%; border: none; cursor: pointer;"><img src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22http%3A%2F%2Fstatic.naver.net%2Fwww%2Fmobile%2Fedit%2F2020%2F0907%2FcropImg_222x145_41375208586363361.jpeg%22&amp;type&#x3D;nf340_228" style="width: 90%; height: 120px; margin: 5px;"></td>
+                        <td style="width: 70%; border: none; text-align: left; margin-left: 5px; padding-top: 10px;"><div style="padding-left: 10px; color: yellowgreen; font-size: x-small; font-weight: bold;">HOT</div><div style="margin-left: 10px; font-size: 12px; font-weight: bold;">코로나 죽이는 자외선도 잘 쓰면 약, 못 쓰면 독!<p style="font-weight: normal;">코로나19는 사라지지 않았다. 끝이 보이지 않는 바이러스와의 싸움에서 이기기 위해 모두가 고군분투하고 있다. 가장 확실한 방역 수단은 역시 마스크다. 마스크 보다 더욱더 적극적인 방법도 동원됐다. 자외선은 우리 눈에는 보이지 않지만, 바이러스를 제거하는 능력이</p><p style="font-size: x-small; color:rgb(165, 165, 165);">techplus · 4일전</p></div></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 30%; border: none; cursor: pointer;"><img src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22http%3A%2F%2Fstatic1.naver.net%2Fwww%2Fmobile%2Fedit%2F2020%2F0807%2FcropImg_222x145_38715565544667156.jpeg%22&amp;type&#x3D;nf340_228" style="width: 90%; height: 120px; margin: 5px;"></td>
+                        <td style="width: 70%; border: none; cursor: pointer; text-align: left; margin-left: 5px; padding-top: 10px;"><div style="padding-left: 10px; color: yellowgreen; font-size: x-small; font-weight: bold;">생산자이야기</div><div style="margin-left: 10px; font-size: 12px; font-weight: bold;">슈퍼푸드 알로에 위궤양 시달리던 남자가 알로에 박사가 된 사연<p style="font-weight: normal;">다른 업종에 비해 농업은 농부의 이름을 내세워 판매하는 경우가 많다. 이름 석 자를 걸고 믿을 수 있는 작물을 키웠다는 신뢰감을 주기 위해서다. 직거래 위주로 하는 소규모 농민부터 기업화한 법인들까지 이런 방법을 활용하는 곳들이</p><p style="font-size: x-small; color:rgb(165, 165, 165);">알로에다방 · 4일전</p></div></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="temp-box box-six">
+                <table>
+                    <th colspan="3" style="padding-left: 10px; padding-bottom: 10px; font-size: small; text-align: left; padding-top: 9px;"><img src="./naver.png" style="width: 10%;"><strong> 트렌드 쇼핑</strong></th>
+                    <th colspan="1" style="text-align: center; font-size: small; font-weight: bold; padding-right: 0px;">상품</th>
+                    <th colspan="1" style=" text-align: center; font-size: small; font-weight: bold; padding-right: 0px;"><strong style="border-bottom: 2px solid rgb(50, 199, 99); color: rgb(50, 199, 99); ">쇼핑몰</strong> 
+                    <th colspan="1" style=" text-align: center; font-size: small; font-weight: bold; padding-right: 0px;">MEN</th>
+                    <tr style="font-size: 12px; height: 40px; font-weight: bold; border: 1px solid #ddd;">
+                        <td style="border: none;"><img src="./11.jpg" width="90%"></td>
+                        <td style="border: none;"></td>
+                        <td style="border: none;"></td>
+                        <td style="border: none;"></td>
+                        <td style="border: none;">1 / 12</td>
+                        <td style="border: none;">
+                            <button type="button" style="cursor: pointer; margin-left: 10px; border: 1px solid lightgray; background-color: white;"><</button>
+                            <button type="button" style="cursor: pointer; margin-left: -2px; border: 1px solid lightgray; background-color: white;">></button>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td style=" border: none; font-size: 12px; font-weight: bold;"><img src="./iu.jpg" width="100%" height="220px" style="padding: 10px;"><br>아이유의 PICK!<p style="font-size: 9px;">제이에스티나 7% 할인</p></td>
+                        <td style=" border: none; font-size: 12px; font-weight: bold;"><img src="./snad.jpg" width="100%" height="220px" style="padding: 10px;"><br>이거 아직 안 먹어봤어?<p style="font-size: 9px;">속초 명물 명란 바게트</p></td>
+                    </tr>
+                    <tr>
+                        <td style=" border: none; font-size: 12px; font-weight: bold;"><img src="./iu.jpg" width="100%" height="220px" style="padding: 10px;"><br>아이유의 PICK!<p style="font-size: 9px;">제이에스티나 7% 할인</p></td>
+                        <td style=" border: none; font-size: 12px; font-weight: bold;"><img src="./snad.jpg" width="100%" height="220px" style="padding: 10px;"><br>이거 아직 안 먹어봤어?<p style="font-size: 9px;">속초 명물 명란 바게트</p></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="temp-box box-seven">
+                <div style="font-size: 12px; font-weight: bold; color: rgb(134, 134, 134); border-top: 1px solid #ddd;"><i class="fas fa-plus-circle" style="cursor: pointer;"></i><br>새로운 글 더 보기</div>
+                
+            </div>
+            <div class="temp-box box-eight">8</div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_area">
+            <div class="notice_box">
+                <h4 class="title"><a href="https://www.naver.com/NOTICE">공지사항</a> </h4>
+                <!-- EMPTY -->
+                <a href="more.html">서비스 전체보기 <i class="fas fa-chevron-right fa-xs"></i></a>
+            </div>
+            <div class="aside_box">
+                <div class="area_user">
+                    <div class="area_user_row">
+                        <span style="font-weight:bold; padding-top: 10px;">Creators</span>
+                        <ul>
+                            <li><a href="/">크리에이터</a></li>
+                            <li style="color: #e0e0e0;"> | </li>
+                            <li><a href="/">스몰비즈니스</a></li>
+                        </ul>
+                    </div>
+                    <div class="area_user_row">
+                        <span style="font-weight:bold; padding-top: 10px;">Partners</span>
+                        <ul>
+                            <li><a href="/">비즈니스 광고</a></li>
+                            <li style="color: #e0e0e0;"> | </li>
+                            <li><a href="/">스토어 개설</a></li>
+                            <li style="color: #e0e0e0;"> | </li>
+                            <li><a href="/">지역업체 등록</a></li>
+                        </ul>
+                    </div>
+                    <div class="area_user_row">
+                        <span style="font-weight:bold; padding-top: 10px;">Developers</span>
+                        <ul>
+                            <li><a href="/">네이버 개발자센터</a></li>
+                            <li style="color: #e0e0e0;"> | </li>
+                            <li><a href="/">오픈API</a></li>
+                            <li style="color: #e0e0e0;"> | </li>
+                            <li><a href="/">오픈소스</a></li>
+                            <li style="color: #e0e0e0;"> | </li>
+                            <li><a href="/">네이버 D2</a></li>
+                            <li style="color: #e0e0e0;"> | </li>
+                            <li><a href="/">네이버 D2SF</a></li>
+                            <li style="color: #e0e0e0;"> | </li>
+                            <li><a href="/">네이버 랩스</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="area_col">
+                    <div class="ac_content">
+                        <div class="text_bold-13">웨일 브라우저</div>
+                        <div class="ac_link"><a href="/">다운받기</a></div>
+                    </div>
+                    <a href="/"><img
+                            src="data:image/png;base64,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"
+                            class="ac_img" /></a>
+                </div>
+                <div class="area_col">
+                    <div class="ac_content">
+                        <div class="text_bold-13">프로젝트 꽃</div>
+                        <div class="ac_link"><a href="/">바로가기</a></div>
+                    </div>
+                    <a href="/"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABkCAMAAAA47XeXAAAAgVBMVEUAAADN5PdGm99Gm99Gm99Gm99Gm95Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gmt9Gm99Gm99Gm99Gm95Gm99Gm99Gm95Gm99Hm99Gm99Gm9/////3+/5cp+LO5PfR5/fO5fdcp+P7/f/zv5GhAAAAInRSTlMA/v7vH9u5qJNgGwb6l8a9uqF9WFUyLxYMCtbVmLCwe4OCj8gzEgAAA0NJREFUaN7NmmFz4iAQhkkwMTHGWrWtWvWuq8mF+/8/8Ey2nb0OhSwQZnw+MHQ7pbjAy2s2gsuiLPJMLpcyy4tyISZltnmHbxw3MzEVr/MUNNL5q5iCt2ccXCN9fhPB7CQYkTsRRlWDlboSAexzGCHfC28OKxhldfDOzBMwePLNTw0sauHFFphshQcLCUwkaQRfXYBPSkrEUBdv3jezcXXhw1ciUhc+fCUidQlH7qzqEk5d2dQlnHxvU5dwVgdXdSGclaiGyamt6hLO1qIu4ZASzcFE092SBprk1jagulvXAAw/qb5N7m176xQYmOPoLymYaK/X65/PNhlagE6LGUhfRM8FjNzuf/73//bHmInzoJEpjMyeWpp9RzGz/PT6+QvMNO2Q+67PPeYZY5h7jDVg5OM+/BGikd13JfDAj/Ad1WLMyEyUwKPT00ypN1GKAljQJtFiFgqRe86eYhbWIvPPPR5d+9pKiIgUwKNJdHXBvW9jyRye1EWLWYfnJcd141Byspizz7gbUyWDuqiW0v15D9g3ZgF86JwyKUgUHJaATUmS5rsEdkkTZLjZS8Alw+skFr8Nl6H6uosShaKOp3Zo+/jgFTDe+wcSfv0yFGfQaLX7tDO0reXOPRuMCG4Q11Y3IiYblWgzS7R+h31qdRtlGB7zikeUckz+AB3a8FuMqD7Cd2nhUHLOEIkLubQIkEuLxIdwEwUy3HyXxsbgPMJcGuGox+TSIugxuTQ+KHIaAS5N92eIIuMT5tJoPfHy5q9yKoXLelLuKRri0mjMQdhwTPw6Sv8pzKXhFyhNilEwkSCXRrnAnaPnJdyl0UrqXircpeHVglnv+62K4NJo3lFcGmWd79KO7OQoXAE8XNO6tIQGxj7fpfHTwk8RubQLWEGvgTNGKzj01fixunCMCCYcvSSlaFwUyKVx86J3bczpUR3zimq1LqdosAUbJF54ar+uk5Gju436mPTk8ZAXFdO93HRYTesUVgf3B+y0XdxLfdVputmfKp/iBtNjyl3c0kzUwtJIWewIPvAL9LOyWLsV9WAps3VRzh6hJBm3oOqsRKfHLGYzS/GP+iLBuBKdqkd+iWPkFZTHf4Em4us/uhI5qss/6zK5u8+AXpwAAAAASUVORK5CYII="
+                            class="ac_img" /></a>
+                </div>
+            </div>
+            <div class="bottom_box">
+                <ul>
+                    <li><a href="/">회사소개</a></li>
+                    <li style="color: #e0e0e0;"> | </li>
+                    <li><a href="/">인재채용</a></li>
+                    <li style="color: #e0e0e0;"> | </li>
+                    <li><a href="/">제휴제안</a></li>
+                    <li style="color: #e0e0e0;"> | </li>
+                    <li><a href="/">이용약관</a></li>
+                    <li style="color: #e0e0e0;"> | </li>
+                    <li><a href="/">개인정보처리방침</a></li>
+                    <li style="color: #e0e0e0;"> | </li>
+                    <li><a href="/">청소년보호정책</a></li>
+                    <li style="color: #e0e0e0;"> | </li>
+                    <li><a href="/">네이버 정책</a></li>
+                    <li style="color: #e0e0e0;"> | </li>
+                    <li><a href="/">고객센터</a></li>
+                    <li style="color: #e0e0e0;"> | </li>
+                    <li><a href="/">&copy; NAVER Corp.</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
