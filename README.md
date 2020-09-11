@@ -1,4 +1,23 @@
-### 26.08.20
+## 11.09.20
+<hr>
+allauth를 이용해서 로그인, 회원가입, log in with google 쉽게 구현하기!<br>
+
+>사진
+<br>-로그아웃상태
+![로그아웃](img/logout.jpg)
+<br>-로그인상태
+![로그인](img/login.jpg)
+<br>-로그아웃상태에서 좋아요
+![로그아웃_좋아요](img/like_logout.jpg)
+<br>-로그인상태에서 좋아요
+![로그인_좋아요](img/like_login.jpg)
+
+
+
+<hr>
+
+## 26.08.20
+<hr>
 
 ### 결과물 스크린 샷!
 -블로그 홈

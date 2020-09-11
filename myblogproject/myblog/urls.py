@@ -15,4 +15,5 @@ urlpatterns = [
     path('<int:post_id>/comments/create/', views.comments_create, name="comments_create"), #댓글생성w
     path('<int:post_id>/comments/<int:comment_id>/delete/', views.comments_delete, name="comments_delete"), #댓글삭제
     path('<int:post_id>/comments/<int:comment_id>/update/', views.comments_update, name="comments_update"), #댓글수정
+    path('<int:post_id>/like/', views.like, name='like'), #좋아요누르기
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

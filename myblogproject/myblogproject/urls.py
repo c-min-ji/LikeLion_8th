@@ -20,4 +20,6 @@ from django.conf.urls import url
 urlpatterns = [
     path('admin/', admin.site.urls),
     url('', include('myblog.urls')),
+    # allauth로 url연결
+    url('accounts/', include('allauth.urls')),
 ]
