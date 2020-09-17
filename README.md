@@ -26,3 +26,19 @@ settings.py에 원하는 데베 연결가능(db종류: mtsql, oracle, postgresqp
 <hr>
 
 model추가 혹은 변경사항생겼을 때, makemigrations
+
+
+## 17.09.20
+<hr>
+
+> ModelForm<br>
+모델에 대응하는 html폼을 만들어줌<br>
+데이터를 생성하거나 업데이트가 간편<br>
+폼을 다루는 법을 배워야함.
+
+> django template filter 구글에 치고 공식문서 들어가보면 필요한 필터 볼 수 있셈!
+
+### pk(primary key)
+> 각각의 오브젝트가 가져야하는 단일 식별자 예) 주민등록번호, 학번...
+
+자소설 3강에서 할 거 : 디테일, 수정, 삭제
