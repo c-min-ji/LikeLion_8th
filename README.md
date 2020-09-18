@@ -1,9 +1,3 @@
-like lion 8th _ cminji Notion<br>
-
-[cminji-notion](https://www.notion.so/likelion8th/Like-Lion-8th-29ad535d02fc469ab6b828df0f4a114b)
-
-<hr>
-
 ## Sign up access email
 <hr>
 
