@@ -26,7 +26,9 @@ SECRET_KEY = '!u99#(1w7l56dcr+m1p^nwknzwoj6xk5_-37&%t@@%88%v1(6#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'https://github.com/c-min-ji/c-min-ji.github.io',
+]
 
 
 # Application definition
