@@ -7,11 +7,6 @@ local_settings.py
 db.sqlite3
 media
     
-### ElasticBeanstalk ###
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml 
-!.elasticbeanstalk/*.global.yml
-
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
