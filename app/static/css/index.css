@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(164, 175, 182);
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+.img-table{
+    border-spacing: 15px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: rgb(252, 255, 211);
+}
+
+a:hover {
+    color: rgb(116, 133, 165);
+}
+
+select {
+    text-align-last: center;
+    position: relative;
+    background-color: rgb(164, 175, 182);
+    border: 0.5px solid rgb(252, 255, 211);
+    color: rgb(252, 255, 211);
+    box-shadow: 3px 3px 20px rgb(252, 255, 211);
+}
+
+select:focus {
+    outline: none;
+    
+}
+
+.cut-img {
+    
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cut-img img {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
+    margin: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:  rgba(230, 233, 193, 0.404);
+}
+
+.cut-img:hover .overlay {
+    opacity: 1;
+}
+
+.more {
+    color: white;
+    font-size: 20px;
+    padding-top: 80px;
+    text-align: center;
+  }
