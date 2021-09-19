@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💙MINJIMANJI💛</title>
+    <!-- bootstrap4 CSS CDN 부분 -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" id="bootstrap-css">
+     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><strong>💙MINJIMANJI💛</strong></a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"></button>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-home"></i>
+                        Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'portfolio' %}">
+                        portfolio
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'new' %}">
+                        ✨Add post✨
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<!--block content 출처: https://ssungkang.tistory.com/entry/Django-11-Pagination-%EC%9D%84-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90-->
+
+{% block content %}
+
+    <div class="container">
+        <!--posts.all 아니고 posts/ posts_num 아니고 posts-->
+        {% for post in posts %}
+            <br>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><strong>{{ post.title }}</strong></h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ post.pub_date }}</h6>
+                    <p class="card-text">{{ post.summary }}</p>
+                    <!--미리보기 보여줄거라 post.summary/다 보여줄거면 post.body-->
+                    <a href = "{%url 'detail' post.id %}" id="card-link">...더보기</a>
+                </div>
+            </div>
+            
+        {% endfor %}
+
+        {% if posts.has_previous %}
+        <a href="?page=1"> 처음 | </a>
+        <a href="?page={{posts.previous_page_number}}">이전</a>
+        {%endif%}
+        
+        <span> {{ posts.number }}</span>
+        <span> of </span>
+        <span> {{ posts.paginator.num_pages }}</span>
+            
+        {%if posts.has_next%}
+        <a href="?page={{posts.next_page_number}}"> 다음 | </a>
+        <a href="?page={{posts.paginator.num_pages}}">마지막</a>
+        {%endif%}
+        
+    </div>
+{% endblock %}
+<br>
+</body>
+</html>
