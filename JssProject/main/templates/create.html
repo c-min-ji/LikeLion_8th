@@ -1,0 +1,6 @@
+<!--POST쓰면 보안 좀 더 up-->
+<form method="POST" action="">
+    {% csrf_token %}
+    {{jss_form.as_p}}
+    <input type="submit" value="확인">
+</form>
