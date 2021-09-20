@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+<!--social account사용할거라 알리기-->
+{% load socialaccount %}
+<!--로그인 기본적 템플릿 쓴다고 말하기-->
+{% providers_media_js %}
+
+{% load static %}
+{% block content %}
+<main role="main">
+    
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1>minji's blog</h1>
+            <p class="lead text-muted">블로그 시험중입니다</p>
+            <p>
+                <br>
+                <!--로그인중이라면-->
+                {% if user.is_authenticated %}
+                ✨{{user.username}} 님이 로그인 중✨<br>
+                <a href="/accounts/logout" class="btn btn-outline-secondary my-2">로그아웃</a><br>
+                
+                <hr>
+                <a href="{% url 'new' %}" class="btn btn-primary my-2">Add Post</a>
+                <a href="{% url 'create10' %}" class="btn btn-outline-secondary my-2">Create 10 Posts</a>
+                <!--로그아웃중이라면-->
+                {% else %}
+                <a href="/accounts/signup" class="btn btn-outline-secondary my-2">Sign up</a>
+                <a href="/accounts/login" class="btn btn-outline-secondary my-2">Login</a><br>
+                <a href="{% provider_login_url 'google' %}" class="btn btn-outline-secondary my-2">Login with google</a><br>
+
+                {% endif %}
+                
+            </p>
+        </div>
+    </section>
+
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+            <div class="row">
+                {% for post in posts.all %}
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <!--이미지 있으면-->
+                        {% if post.image != '' %}
+                        <img class="card-img-top" src="{{ post.image.url }}" height="225" alt="Card imge cap">
+                        <!--없으면-->
+                        {% else %}
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                            role="img" aria-label="Placeholder: Thumbnail">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                dy=".3em">No image</text>
+                        </svg>
+                        {% endif %}
+
+                        <div class="card-body">
+                            <h4>{{ post.title }}</h4>
+                            <p class="card-text">{{ post.summary }}</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <!--중요: onclick="location.href='{ % % }';" 형식잘지키길-->
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"
+                                        onclick="location.href='{% url 'detail' post.id %}';">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"
+                                        onclick="location.href='{% url 'delete' post.id %}';">Delete</button>
+                                </div>
+                                <small class="text-muted">{{ post.pub_date }}</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+</main>
+{% endblock %}
